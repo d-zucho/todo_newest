@@ -1,0 +1,48 @@
+#mainTitle,
+hr,
+#zuchoDev,
+#todoForm {
+	margin: 0;
+}
+
+header {
+	background: beige;
+	text-align: center;
+}
+
+#mainTitle {
+	padding: 20px;
+}
+
+#zuchoDev {
+	padding-bottom: 10px;
+	font: 0.75em cursive;
+}
+
+#inputs {
+	display: grid;
+	grid-template-rows: 5rem;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+	align-items: end;
+}
+
+#enterTodos {
+	grid-column: 1/3;
+}
+
+#filter {
+	grid-column: 3/5;
+}
+
+#hideButton {
+	text-align: center;
+}
+
+#todos > div > * {
+	margin-left: 0.5em;
+}
+#todos > div > a {
+	text-decoration: none;
+	color: black;
+}

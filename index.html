@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="mainTitle">Get Things Done</h1>
+      <h3 id="zuchoDev">By Zucho Development</h3>
+    </header>
+    <hr />
+    <main>
+      <a href="editTodos/editTodos.html">Link here</a>
+      <section id="inputs">
+        <div id="enterTodos">
+          <form id="todoForm">
+            <label for="todoText">Enter a Todo: </label>
+            <input type="text" id="todoText" name="todoText" />
+            <button type="submit">Enter</button>
+          </form>
+        </div>
+        <div id="filter">
+          <label for="filterText">Filter: </label>
+          <input type="text" id="filterText" />
+        </div>
+      </section>
+      <br /><br />
+      <div id="summary"></div>
+
+      <div id="hideButton">
+        <label for="hideCompleted">Hide Completed: </label>
+        <input type="checkbox" name="hideCompleted" id="hideCompleted" />
+      </div>
+      <br /><br />
+      <div id="todos"></div>
+    </main>
+    <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+    <script src="todoFunctions.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
