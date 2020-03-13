@@ -21,6 +21,7 @@ document.querySelector('#todoForm').addEventListener('submit', function(e) {
 		completed: false,
 	});
 
+
 	e.target.elements.todoText.value = '';
 	document.querySelector('#todos').innerHTML = '';
 	saveTodos(todos);
@@ -36,3 +37,7 @@ document.querySelector('#filterText').addEventListener('input', function(e) {
 
 	renderTodos(todos, filters);
 });
+
+document.querySelector('#addAdvanced').addEventListener('click', function (e) {
+	location.assign('editTodos/editTodos.html')
+})
